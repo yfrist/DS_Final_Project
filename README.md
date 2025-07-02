@@ -1,8 +1,10 @@
 # ♟️ Online Chess Data Science Project
 
-This repository contains an end-to-end analysis of online chess games using methods from data science and machine learning. 
-Each module in the project is self-contained and can be run independently. 
-This README provides **instructions for running each section** and **locating the generated outputs**.
+This repository contains an end-to-end analysis of online chess games using methods from data science and machine learning. Each module in the project is self-contained and can be run independently. This README provides instructions for running each section and locating the generated outputs.
+
+For a full overview of the project’s goals, methodology, and findings, see the full report:
+[**Online Chess Games: A Multi-Faceted Data Science Exploration (PDF)**](Online%20Chess%20Games_%20A%20Multi-Faceted%20Data%20Science%20Exploration.pdf)
+
 
 ---
 
