@@ -3,22 +3,24 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
-
-def train_logistic(X_train, y_train):
+def train_logistic(X_train, y_train, class_weight=None, **fit_kwargs):
     """
     Train the Logistic Regression model using optimal hyperparameters.
+
+    Accepts an optional class_weight dict to handle imbalance.
     """
     # Standardize the data
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
 
     model = LogisticRegression(
-        C=0.1,                # Best regularization strength
-        penalty='l2',         # L2 regularization
-        solver='lbfgs',       # Best solver
-        max_iter=5000
+        C=0.1,
+        penalty='l2',
+        solver='lbfgs',
+        max_iter=5000,
+        class_weight=class_weight
     )
-    model.fit(X_train_scaled, y_train)
+    model.fit(X_train_scaled, y_train, **fit_kwargs)
 
     # Save the scaler for use during evaluation
     joblib.dump(scaler, "models/logistic_regression_scaler.pkl")
@@ -29,7 +31,6 @@ def evaluate_logistic(model, X_test, y_test):
     """
     Evaluate the Logistic Regression model.
     """
-    # Load the scaler and scale the test data
     scaler = joblib.load("models/logistic_regression_scaler.pkl")
     X_test_scaled = scaler.transform(X_test)
 
