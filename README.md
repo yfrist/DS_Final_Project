@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 1. Statistics
+## 1. Statistics
 
 **Script:**  
 `statistics/code/chess_statistical_analysis.py`
@@ -32,7 +32,7 @@ python statistics/code/chess_statistical_analysis.py
 
 ---
 
-## 🔮 2. Prediction
+## 2. Prediction
 
 **Script:**  
 `prediction/main.py`
@@ -49,7 +49,7 @@ python prediction/main.py
 
 ---
 
-## 🧱 3. Clustering
+## 3. Clustering
 
 **Scripts:**  
 - `clustering/cluster_games.py` (main)  
@@ -66,7 +66,7 @@ python clustering/cluster_games.py
 
 ---
 
-## 🌐 4. Community Detection
+## 4. Community Detection
 
 **Scripts:**  
 - `community/network_analysis_basic.py`  
@@ -85,7 +85,7 @@ All results, plots, and centrality metrics are saved to:
 
 ---
 
-## ⏱️ 5. Time Sequence Analysis
+## 5. Time Sequence Analysis
 
 **Scripts:**  
 - `time_sequence/stage5_time_control_analysis.py`  
